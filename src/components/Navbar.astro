@@ -1,0 +1,75 @@
+<nav>
+  <div class="container navbar-container">
+    <a class="logo-container" href="/">
+      <img src="/public/logo.svg" /> 
+      <h1 class="title-text">Todsaporn W.</h1>
+    </a>
+    <div class="menu-container">
+      <a href="https://github.com/JustTod" target="_blank">
+        Github
+      </a>
+      <a  href="https://www.linkedin.com/in/wat-todsaporn/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* @media screen and (max-width: 768px) {
+    h1 {
+      color: red;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      color: blue;
+    } 
+  } */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      max-width: 44px;
+      max-height: 44px;
+      margin-right: 5%;
+    }
+
+    .title-text {
+      text-wrap: nowrap;
+      color: black;
+      display: block;
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      margin-left: 16px;
+      color: black;
+      
+    }
+    a:hover {
+      color: #007CED;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+</style>
